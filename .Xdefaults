@@ -1,0 +1,143 @@
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+ 
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+Xft.autohint:               false
+Xft.lcdfilter:              lcddefault
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+ 
+URxvt*depth:                32
+URxvt.geometry:             90x30
+URxvt*transparent:          true
+URxvt*shading:              30
+URxvt.loginShell:           true
+URxvt.saveLines:            50
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+ 
+! Fonts
+URxvt.allow_bold:           true
+URxvt.font:           xft:Inconsolata\ for\ Powerline:size=11:antialias=true,xft:Inconsolata\ for\ Powerline:size=11:antialias=true
+URxvt.imFont:         xft:Inconsolata\ for\ Powerline:MediumForPowerline:size=11:antialias=true,xft:Inconsolata\ for\ Powerline:size=11:antialias=true
+URxvt.boldFont:       xft:Inconsolata\ for\ Powerline:MediumForPowerline:size=11:antialias=true,xft:Inconsolata\ For\ Powerline:size=11:antialias=true
+URxvt.italicFont:     xft:Inconsolata\ for\ Powerline:MediumForPowerline:size=11:antialias=true,xft:Inconsolata\ For\ Powerline:size=11:antialias=true
+URxvt.boldItalicFont: xft:Inconsolata\ for\ Powerline:MediumForPowerline:size=11:antialias=true,xft:Inconsolata\ For\ Powerline:size=11:antialias=true
+
+URxvt.intensityStyles: false
+URxvt.iconFile:       /usr/share/icons/Faenza/apps/scalable/terminal.svg
+URxvt.boldMode:       false
+URxvt.skipBuiltinGlyphs: true
+URxvt.loginShell: true
+URxvt*title: urxvt
+URxvt*termName: rxvt-unicode-256color
+URxvt*urgentOnBell: true
+
+URxvt.depth: 24
+URxvt.internalBorder: 1
+
+! ScrollBar
+URxvt.scrollBar:            false
+URxvt.scrollBar_right:      false
+URxvt.scrollstyle:          plain
+URxvt.jumpScroll:           false
+
+URxvt.scrollWithBuffer:     true
+URxvt.scrollTtyKeypress:    true
+URxvt.scrollTtyOutput:      false
+
+URxvt.buffered:             true
+URxvt.pointerBlank:         true
+URxvt.underlineURLs:        true
+URxvt.saveLines:            2048
+
+! URLs
+URxvt.perl-ext:              default,url-select,matcher,clipboard,font-size
+URxvt.keysym.M-u:            perl:url-select:select_next
+URxvt.url-select.launcher:   /usr/bin/chromium
+URxvt.url-select.underline:  true
+URxvt.keysym.C-Up:           perl:font-size:increase 
+URxvt.keysym.C-Down:         perl:font-size:decrease 
+URxvt.keysym.C-S-Up:         perl:font-size:incglobal 
+URxvt.keysym.C-S-Down:       perl:font-size:decglobal 
+URxvt.iso14755:              false
+URxvt.iso14755_52:           false
+URxvt.keysym.M-c:            perl:clipboard:copy
+URxvt.keysym.M-v:            perl:clipboard:paste
+
+Xcursor.size:  15
+
+! Cursor
+URxvt.cursorBlink:          true
+! URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+ 
+! Pointer
+URxvt.pointerBlank:         true
+
+! #define S_base03        #002b36
+! #define S_base02        #073642
+! #define S_base01        #586e75
+! #define S_base00        #657b83
+! #define S_base0         #839496
+! #define S_base1         #93a1a1
+! #define S_base2         #eee8d5
+! #define S_base3         #fdf6e3
+! #define S_yellow        #b58900
+! #define S_orange        #cb4b16
+! #define S_red           #dc322f
+! #define S_magenta       #d33682
+! #define S_violet        #6c71c4
+! #define S_blue          #268bd2
+! #define S_cyan          #2aa198
+! #define S_green         #859900
+
+*background:            #fdf6e3
+*foreground:            #657b83
+*fadeColor:             #fdf6e3
+*cursorColor:           #586e75
+*pointerColorBackground:#93a1a1
+*pointerColorForeground:#586e75
+
+!! black dark/light
+*color0:                #073642
+*color8:                #002b36
+
+!! red dark/light
+*color1:                #dc322f
+*color9:                #cb4b16
+
+!! green dark/light
+*color2:                #859900
+*color10:               #586e75
+
+!! yellow dark/light
+*color3:                #b58900
+*color11:               #657b83
+
+!! blue dark/light
+*color4:                #268bd2
+*color12:               #839496
+
+!! magenta dark/light
+*color5:                #d33682
+*color13:               #6c71c4
+
+!! cyan dark/light
+*color6:                #2aa198
+*color14:               #93a1a1
+
+!! white dark/light
+*color7:                #A9A9A9
+*color15:               #fdf6e3
