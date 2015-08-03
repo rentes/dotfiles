@@ -62,7 +62,7 @@ export NMON="d"
 source ~/.rvm/scripts/rvm
 source ~/.gem/ruby/2.2.0/gems/tmuxinator-0.6.11/completion/tmuxinator.zsh
 
-# if starting for the first time, launch tmuxinator with home profile
+# if starting for the first time, launch tmuxinator with office profile
 if [ "$(tmux ls >& /dev/null | cut -d ' ' -f 1)" != "office:" ]; then
 mux start office
 fi
