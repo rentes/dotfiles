@@ -1,6 +1,6 @@
 # ~/.tmuxinator/home.yml
 
-name: home
+name: office
 root: ~/
 
 # Optional tmux socket
