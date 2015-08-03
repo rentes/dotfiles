@@ -27,14 +27,19 @@ root: ~/
 # Runs after everything. Use it to attach to tmux with custom options etc.
 # post: tmux -CC attach -t home
 
+
+# refer to
+# http://stackoverflow.com/questions/26560963/how-to-split-two-vertical-pane-inside-a-horizontal-pane-in-tmux-using-tmuxinator
+# to assert the layout below
+
 windows:
   - shell:
   - monitor:
+      layout: c272,141x60,0,0[141x30,0,0,1,141x7,0,31,4,141x21,0,39{82x21,0,39,5,58x21,83,39,7}]
       panes:
         - htop
-        - nmon
         - watch free -mt
-        - sudo iotop -o
+        - nmon
+        - cat /etc/fstab|grep "sdb"|cut -f 1,2
   - pacman: pacman -Syu
-  - editor: emacs -nw
   - music: ncmpcpp
