@@ -61,3 +61,8 @@ export RI="--format ansi --width 80" # ri customizations
 export NMON="d"
 source ~/.rvm/scripts/rvm
 source ~/.gem/ruby/2.2.0/gems/tmuxinator-0.6.11/completion/tmuxinator.zsh
+
+# if starting for the first time, launch tmuxinator with home profile
+if [ "$(tmux ls >& /dev/null | cut -d ' ' -f 1)" != "home:" ]; then
+mux start home
+fi

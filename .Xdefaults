@@ -21,7 +21,7 @@ Xft.lcdfilter:              lcddefault
 URxvt*depth:                32
 URxvt.geometry:             90x30
 URxvt*transparent:          true
-URxvt*shading:              30
+URxvt*shading:              50
 URxvt.loginShell:           true
 URxvt.saveLines:            50
 URxvt.internalBorder:       3
@@ -63,6 +63,7 @@ URxvt.underlineURLs:        true
 URxvt.saveLines:            2048
 
 ! URLs
+
 URxvt.perl-ext:              default,url-select,matcher,clipboard,font-size
 URxvt.keysym.M-u:            perl:url-select:select_next
 URxvt.url-select.launcher:   /usr/bin/chromium
@@ -86,33 +87,9 @@ URxvt.cursorUnderline:      false
 ! Pointer
 URxvt.pointerBlank:         true
 
-! #define S_base03        #002b36
-! #define S_base02        #073642
-! #define S_base01        #586e75
-! #define S_base00        #657b83
-! #define S_base0         #839496
-! #define S_base1         #93a1a1
-! #define S_base2         #eee8d5
-! #define S_base3         #fdf6e3
-! #define S_yellow        #b58900
-! #define S_orange        #cb4b16
-! #define S_red           #dc322f
-! #define S_magenta       #d33682
-! #define S_violet        #6c71c4
-! #define S_blue          #268bd2
-! #define S_cyan          #2aa198
-! #define S_green         #859900
-
-*background:            #fdf6e3
-*foreground:            #657b83
-*fadeColor:             #fdf6e3
-*cursorColor:           #586e75
-*pointerColorBackground:#93a1a1
-*pointerColorForeground:#586e75
-
-!! black dark/light
-*color0:                #073642
-*color8:                #002b36
+*background:            #a9a9a9
+*foreground:            #ffffff
+*cursorColor:           #ffffff
 
 !! red dark/light
 *color1:                #dc322f
@@ -123,8 +100,8 @@ URxvt.pointerBlank:         true
 *color10:               #586e75
 
 !! yellow dark/light
-*color3:                #b58900
-*color11:               #657b83
+*color3:                #ffb90f
+*color11:               ##ffff00
 
 !! blue dark/light
 *color4:                #268bd2
@@ -138,6 +115,3 @@ URxvt.pointerBlank:         true
 *color6:                #2aa198
 *color14:               #93a1a1
 
-!! white dark/light
-*color7:                #A9A9A9
-*color15:               #fdf6e3
