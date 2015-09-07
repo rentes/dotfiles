@@ -43,15 +43,32 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH="/home/miguel/.gem/ruby/2.2.0/bin:/home/miguel/.gem/ruby/2.1.0/bin:$PATH"
+# these settings are set on /etc/environment
+# export HTTP_PROXY="http://0930:Kk12345678@proxymaistd.efacec.pt:8082/"
+# export HTTPS_PROXY="http://0930:Kk12345678@proxymaistd.efacec.pt:8082/"
+autoload -Uz compinit colors
+compinit
+colors
+
+setopt nocheckjobs correct completealiases autocd cdablevars auto_menu complete_in_word
+
+unsetopt BG_NICE menu_complete
+
+export XDG_CONFIG_HOME="$HOME/.config"
 export PULSE_LATENCY_MSEC=60
 alias pacman="sudo -E pacman"
 alias gem="sudo -E gem"
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_25
 source /usr/bin/virtualenvwrapper.sh
 alias ls="ls -h --color=auto"
+alias la='ls -a'
 
+alias reboot='sudo reboot'
+alias poweroff='sudo poweroff'
+
+alias chromium="chromium --proxy-pac-url=\"http://wpad.efacec.pt/wpad.dat\""
 export TERM="xterm-256color"
-export EDITOR="emacs -nw"
+export EDITOR="emacsclient -t"
 
 export RAILS_ENV="production"
 
@@ -62,7 +79,10 @@ export NMON="d"
 source ~/.rvm/scripts/rvm
 source ~/.gem/ruby/2.2.0/gems/tmuxinator-0.6.11/completion/tmuxinator.zsh
 
-# if starting for the first time, launch tmuxinator with office profile
-if [ "$(tmux ls >& /dev/null | cut -d ' ' -f 1)" != "office:" ]; then
-mux start office
-fi
+# if starting for the first time, launch tmuxinator with home profile
+#if [ "$(tmux ls >& /dev/null | cut -d ' ' -f 1)" != "office:" ]; then
+#mux start office
+#fi
+
+export NVM_DIR="/home/miguel/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
