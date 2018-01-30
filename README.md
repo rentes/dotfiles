@@ -1,2 +1,2 @@
 # dotfiles
-My personal OS X/Linux dotfiles
+My personal OS X dotfiles
