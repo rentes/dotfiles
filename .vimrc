@@ -9,3 +9,5 @@
 " Specify the list char to show the whitespace
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+" Set color column at column 80
+:set colorcolumn=80
