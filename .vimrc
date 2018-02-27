@@ -1,5 +1,6 @@
 set hlsearch " Highlight all searches with color
 set nu " Always show the line numbers
+set rnu " Show relative line numbers
 set showmatch " Match brackets
 set list " Show whitespace
 set showbreak=↪\ " Show line breaks with this char
