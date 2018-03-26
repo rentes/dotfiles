@@ -1,0 +1,12 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "terminal.integrated.fontFamily": "Inconsolata for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "Monaco",
+    "autoDocstring.docstringFormat": "google",
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pep8Enabled": true
+}
