@@ -8,5 +8,18 @@
     "editor.fontFamily": "Monaco",
     "autoDocstring.docstringFormat": "google",
     "python.linting.pydocstyleEnabled": true,
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "[org]": {},
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.rulers": [120]
 }
